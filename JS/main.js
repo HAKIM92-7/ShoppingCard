@@ -7,33 +7,38 @@ let main=document.querySelector('main');
 let smartphone=document.getElementById('smartphone');
 let pull=document.getElementById('pull');
 let kalenji=document.getElementById('kalenji');
-let button3=document.getElementsByClassName('delete');
+let delete1=document.getElementById('delete1');
+let delete2=document.getElementById('delete2');
+let delete3=document.getElementById('delete3');
 let total=document.getElementById('total');
-let inp=document.getElementsByClassName('inp');
+let inp1=document.getElementById('inp1');
+let inp2=document.getElementById('inp2');
+let inp3=document.getElementById('inp3');
 
-button3[0].onclick=function(){
+
+delete1.onclick=function(){
 
 
-total.innerHTML=parseInt(total.innerHTML)-inp[0].value*499;
+total.innerHTML=parseInt(total.innerHTML)-inp1.value*499;
 main.removeChild(smartphone);
 
 }
-button3[1].onclick=function(){
+delete2.onclick=function(){
 
-    total.innerHTML=parseInt(total.innerHTML)-inp[1].value*60;
+    total.innerHTML=parseInt(total.innerHTML)-inp2.value*60;
 
     main.removeChild(pull);
     
   
     
     }
-button3[2].onclick=function(){
-    total.innerHTML=parseInt(total.innerHTML)-inp[2].value*99;
+delete3.onclick=function(){
+    total.innerHTML=parseInt(total.innerHTML)-inp3.value*99;
         main.removeChild(kalenji);
         
         
         }
-        
+
         
 
 let randomColor=function(){
@@ -58,6 +63,7 @@ function increase(id,tot,ctn)
    val ++ ;
    input.value=val.toString();
    let total=document.getElementById(tot);
+   
    total.innerHTML=parseInt(total.innerHTML)+ctn;
 
 
@@ -75,6 +81,7 @@ function decrease (id,tot,ctn)
     input.value=val.toString();
     
     let total=document.getElementById(tot);
+    
     total.innerHTML=parseInt(total.innerHTML)-ctn;
     }
 }
