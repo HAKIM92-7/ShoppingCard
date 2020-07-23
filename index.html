@@ -17,7 +17,7 @@
 <h1>Hakim's Shopping Card</h1>
 </div>
 
-<p>Total :</p>
+ <p>Total : <span id="total">0</span> DT</p>
 
 
 </header>
@@ -36,7 +36,7 @@
 
 <p class="textquantity">Quantité = </p>
 <div class="buttons">
-<button class="plus">+</button> <button class="moins">-</button>
+<button class="plus" onclick="increase('inp1','total',499)">+</button> <input type="text" id="inp1" class="inp" value="0"/> <button class="moins" onclick="decrease('inp1','total',499)">-</button>
 </div>
 </div>
 
@@ -73,7 +73,7 @@
     
     <p class="textquantity">Quantité = </p>
     <div class="buttons">
-    <button class="plus">+</button> <button class="moins">-</button>
+    <button class="plus" onclick="increase('inp2','total',60)">+</button> <input type="text" id="inp2" class="inp" value="0"/>  <button class="moins" onclick="decrease('inp2','total',60)")>-</button>
     </div>
     </div>
     <div class="heart">
@@ -100,11 +100,12 @@
         <div class="price"><p >99 DT</p></html></div>
         
         <div class="quantity">
-        <p class="textquantity">Quantité = </p>
+        <p class="textquantity" >Quantité =  </p>
         <div class="buttons">
-        <button class="plus">+</button> <button class="moins">-</button>
+        <button class="plus" onclick="increase('inp3','total',99)">+</button> <input type="text" id="inp3" class="inp" value="0"/> <button class="moins" onclick="decrease('inp3','total',99)">-</button>
         </div>
         </div>
+
         <div class="heart">
             <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style= "fill:none; stroke: black ; stroke-width:4;" onclick="style.fill=randomColor();">
                 <path d="M 10,30
